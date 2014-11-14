@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cross-Tabulation from CSV</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body ng-app="csvUpload">
+		
+		<div ng-include="'app/templates/csvUpload.html'" ng-controller="csvUpload"></div>
+
+		<!-- Loading assests : angular.js, jquery, angular-ui-router --> 
+		<script src="assets/js/jquery/jquery.min.js"></script>
+      	<script src="assets/js/angular/angular.min.js"></script>
+      	<script src="assets/js/angular-ui-router/angular-ui-router.min.js"></script>
+		
+		<!-- Loading jquery-csv plugin -->
+		<script src="assets/plugins/jquery-csv/jquery.csv-0.71.js"></script>
+		
+		<!-- Loading app -->
+		<script src="app/app.js"></script>
+			<!-- Injecting js files for app -->
+			<script src="app/services/csvParse.js"></script>
+			<script src="app/controllers/csvUpload-controller.js"></script>
+	</body>
+</html>

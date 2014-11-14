@@ -1,0 +1,17 @@
+<div id='inputs' class="text-center">
+	<div class="form-group">
+    	<label class="col-sm-2 control-label">Select the CSV file for Column Tabulation</label>
+    	<input type='file'  id='files' name=files[] multiple onchange="angular.element(this).scope().handleUpload(this)">
+  	</div>
+</div>
+<br></br>
+<table id='contents' class="table table-hover table-condensed" border></table>
+<br></br>
+<select class="btn btn-default" id='selectBox1'>
+	<option>No column found</option>
+</select>
+<select class="btn btn-default" id='selectBox2'>
+	<option>No column found</option>
+</select>
+<br></br>
+<table class="table table-hover table-condensed" id="columnTabulation"></table>
